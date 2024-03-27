@@ -31,7 +31,7 @@ h1 {
   margin: 0;
   padding: 10px;
   background: #000000;
-  color: #ffffff;
+
   font-family: "IBM Plex Mono", monospace;
   border: none;
   border-top-left-radius: 30px;
@@ -39,7 +39,7 @@ h1 {
 }
 
 #haiku-input::placeholder {
-  color: #bbff00;
+  color: #ffffff;
 }
 
 #haiku-generate {
@@ -47,12 +47,15 @@ h1 {
   margin: 0;
   padding: 10px;
   background: #000000;
-  color: #ffffff;
+  color: #bbff00;
   font-family: "IBM Plex Mono", monospace;
-  font-weight: bold;
   border: none;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+#haiku-generate:hover {
+  cursor: pointer;
 }
 
 .haiku-result {
@@ -67,11 +70,13 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 5px;
   font-size: 12px;
   background-color: #000000;
   color: #ffffff;
 }
 
 a {
+  text-decoration: none;
   color: #bbff00;
 }
