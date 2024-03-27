@@ -28,8 +28,8 @@ input {
   vertical-align: middle;
 }
 .search,
-.result,
-.test-box {
+#haiku-result,
+#haiku-form {
   margin: 0 auto 20px;
   width: 800px;
 }
@@ -60,7 +60,7 @@ input {
   cursor: pointer;
 }
 
-.result {
+#haiku-result {
   border: 1px solid #000000;
   border-radius: 30px;
 }
