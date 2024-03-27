@@ -29,7 +29,6 @@ h1 {
 
 #haiku-input {
   width: 75%;
-  margin: 0;
   padding: 10px;
   background: #000000;
   color: #ffffff;
@@ -45,7 +44,6 @@ h1 {
 
 #haiku-generate {
   width: 20%;
-  margin: 0;
   padding: 10px;
   background: #000000;
   color: #bbff00;
