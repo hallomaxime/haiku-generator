@@ -1,0 +1,55 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bolder;
+  line-height: 72px;
+}
+
+.cursive {
+  font-family: "Caveat", cursive;
+  font-size: 120px;
+  font-weight: 400;
+}
+
+.haiku-search {
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 50px;
+}
+
+#haiku-input {
+  width: 75%;
+  margin: 0;
+  padding: 10px;
+  background: #000000;
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#haiku-generate {
+  width: 20%;
+  margin: 0;
+  padding: 10px;
+  background: #000000;
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.haiku-result {
+  margin: 30px auto;
+  max-width: 730px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
