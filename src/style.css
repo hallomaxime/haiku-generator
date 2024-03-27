@@ -33,7 +33,6 @@ input {
 .test-box {
   margin: 0 auto 20px;
   width: 800px;
-  border: 1px solid #000000;
 }
 
 #topic-input {
@@ -61,6 +60,7 @@ input {
 }
 
 .result {
+  border: 1px solid #000000;
   border-radius: 30px;
 }
 
