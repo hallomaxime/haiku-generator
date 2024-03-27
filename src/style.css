@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  margin-top: 80px;
+  margin: 80px auto;
   font-size: 100px;
   font-weight: bolder;
   line-height: 72px;
@@ -21,47 +21,46 @@ h1 {
   font-weight: 400;
 }
 
-.haiku-search {
-  margin: 80px auto;
-  max-width: 800px;
-  border-radius: 50px;
+input {
+  padding: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  background: #000000;
+  border: none;
+  vertical-align: middle;
+}
+.search,
+.result,
+.test-box {
+  margin: 0 auto 20px;
+  width: 800px;
+  border: 1px solid #000000;
 }
 
-#haiku-input {
+#topic-input {
   width: 650px;
-  padding: 10px;
-  background: #000000;
   color: #ffffff;
-  font-family: "IBM Plex Mono", monospace;
   border: none;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 
-#haiku-input::placeholder {
+#topic-input::placeholder {
   color: #ffffff;
 }
 
-#haiku-generate {
+#search-button {
   width: 120px;
-  padding: 12px;
-  background: #000000;
   color: #bbff00;
-  font-family: "IBM Plex Mono", monospace;
   border: none;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-#haiku-generate:hover {
+#search-button:hover {
   cursor: pointer;
 }
 
-.haiku-result {
-  margin: 30px auto;
-  max-width: 730px;
-  padding: 20px;
-  border: 1px solid #000000;
+.result {
   border-radius: 30px;
 }
 
