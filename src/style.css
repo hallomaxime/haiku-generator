@@ -63,6 +63,15 @@ input {
 #haiku-result {
   border: 1px solid #000000;
   border-radius: 30px;
+  line-height: 20px;
+  padding: 20px 0;
+  visibility: hidden;
+}
+
+.cursive-small {
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 footer {
