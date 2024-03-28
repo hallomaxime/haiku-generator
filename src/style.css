@@ -30,7 +30,7 @@ input {
 .search,
 #haiku-result,
 #haiku-form {
-  margin: 0 auto 20px;
+  margin: 0 auto;
   width: 800px;
 }
 
@@ -60,12 +60,20 @@ input {
   cursor: pointer;
 }
 
+small {
+  opacity: 0.5;
+}
+
 #haiku-result {
   border: 1px solid #000000;
   border-radius: 30px;
   line-height: 20px;
+  margin-top: 20px;
   padding: 20px 0;
-  visibility: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .cursive-small {
@@ -87,4 +95,13 @@ footer {
 a {
   text-decoration: none;
   color: #bbff00;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }

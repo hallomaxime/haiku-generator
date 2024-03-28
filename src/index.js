@@ -2,9 +2,6 @@
 function displayHaiku(response) {
   console.log("haiku generated");
 
-  let haikuResult = document.querySelector("#haiku-result");
-  haikuResult.style.visibility = "visible";
-
   new Typewriter("#haiku-result", {
     strings: response.data.answer,
     autoStart: true,
@@ -24,12 +21,19 @@ function generateHaiku(event) {
   let prompt = `The user instructions are: Generate a haiku about ${topicInput.value}. Format in basic HTML and separate each line with a <br> tag. Do not add a title, and do not respond with anything more text besides the poem lines. At the end, add another <br> and then please sign your name. Wrap your name in a <span> element with the class "cursive-small".`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  // make call to API
-  axios.get(apiUrl).then(displayHaiku);
+  let haikuResult = document.querySelector("#haiku-result");
+  haikuResult.classList.remove("hidden");
+  haikuResult.innerHTML = `<div class="blink">generating a haiku about ${topicInput.value}...</div>`;
+
+  let smallText = document.querySelector("small");
+  smallText.classList.add("hidden");
 
   console.log("preparing haiku");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
+
+  // make call to API
+  axios.get(apiUrl).then(displayHaiku);
 }
 
 let haikuFormElement = document.querySelector("#haiku-form");
